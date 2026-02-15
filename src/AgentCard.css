@@ -1,0 +1,123 @@
+.agent-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-4px);
+  border-color: #00d4aa;
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+}
+
+.agent-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.agent-icon {
+  width: 64px;
+  height: 64px;
+  background: #12121a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.agent-info {
+  flex: 1;
+}
+
+.agent-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f0f0f5;
+  margin-bottom: 4px;
+}
+
+.agent-vendor {
+  font-size: 14px;
+  color: #8888a0;
+}
+
+.agent-category {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(124, 58, 237, 0.2);
+  color: #7c3aed;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.agent-description {
+  font-size: 14px;
+  color: #8888a0;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.agent-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.agent-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.agent-rating-stars {
+  color: #fbbf24;
+}
+
+.agent-rating-value {
+  font-weight: 600;
+  color: #f0f0f5;
+}
+
+.agent-price {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f0f0f5;
+}
+
+.agent-price.free {
+  color: #22c55e;
+}
+
+.btn-deploy {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  background: linear-gradient(135deg, #00d4aa 0%, #7c3aed 100%);
+  color: #0a0a0f;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-deploy:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+}
+
+.btn-deploy:disabled,
+.btn-deploy.deployed {
+  background: #2a2a3e;
+  color: #8888a0;
+  cursor: not-allowed;
+}

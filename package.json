@@ -1,0 +1,17 @@
+{
+  "name": "agent-marketplace-components",
+  "version": "1.0.0",
+  "description": "Reusable React components for Agent Marketplace",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
